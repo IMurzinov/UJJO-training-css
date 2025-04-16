@@ -241,19 +241,14 @@ button:hover {
 
 .product {
     position: absolute;
+    top: 280px;
 }
 
 .one-bottle {
-    top: 280px;
     left: 28px;
 }
 
-.two-bottle {
-    top: 280px;
-}
-
 .dark-bottle {
-    top: 280px;
     right: 28px;
 }
 
@@ -448,9 +443,7 @@ button:hover {
   .bottle-big, .story-frame-image, .middle-picture {
     display: none;
   }
-}
 
-@media (max-width: 768px) {
   .wrapper {
     margin: 0 5vw;
   }
@@ -555,4 +548,86 @@ button:hover {
   .privacy-policy, .instagram {
     width: 80%;
   }
+}
+
+/* ========== Большие экраны (десктопы 4K и т.п.) ========== */
+@media (min-width: 1440px) {
+  /* Можно увеличить шрифты, добавить отступы */
+}
+
+/* ========== Стандартные десктопы ========== */
+@media (max-width: 1200px) {
+  .ujjo-logo {
+    width: 476px;
+    height: 345px;
+  }
+
+  .bottle-hand {
+    width: 460px;
+  }
+
+  .bottle-cups {
+    width: 467px;
+    height: 488px;
+  }
+
+  .green-card {
+    width: 305px;
+  }
+
+  .small-left, .small-right {
+    top: 17px;
+  }
+
+  .large-left {
+    left: 287px;
+  }
+
+  .large-right {
+    right: 287px;
+  }
+
+  .product {
+    width: 258px;
+    top: 210px;
+  }
+
+  .one-bottle {
+    top: 210px;
+  }
+
+  .bottle-big {
+    width: 954px;
+  }
+
+  .story-header {
+    font-size: 35px;
+  }
+
+  .story-block__founder, .story-block__history {
+    width: 50%;
+  }
+
+  .founder-photo {
+    width: 50%;
+  }
+
+  .story-frame-image {
+    width: 477px;
+    height: 690px;
+  }
+
+  .story__text-container {
+    width: 292px;
+  }
+
+  .final-picture {
+    height: 518px;
+  }
+}
+
+
+/* ========== Планшеты (landscape) ========== */
+@media (max-width: 1024px) {
+  /* Перевести из 3 колонок в 2, уменьшить шрифты */
 }
