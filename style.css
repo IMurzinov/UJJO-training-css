@@ -1,0 +1,558 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+* {
+    box-sizing :border-box;
+}
+
+body {
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+
+    font-family: 'Roboto';
+    font-weight: 400;
+
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0 15vw;
+    border: 1px solid #000;
+}
+
+.main {
+    flex: 1;
+}
+
+a {
+    text-decoration: none;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+/* ===========HEADER=============== */
+
+.header__container {
+    height: 112px;
+    display: flex;
+    padding: 10px 5px;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+    border-bottom: 1px solid #000;
+}
+
+.nav__button {
+    width: 144px;
+    height: 52px;
+    background-color: #FFF;
+    border: none;
+    color: #222222;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.nav__button:hover {
+    border: 2px solid #FB4B4D;
+    cursor: pointer;
+}
+
+.red {
+    background-color: #FB4B4D;
+    color: #FFF;
+}
+
+.red:hover {
+    background-color: #FFF;
+    color: #FB4B4D;
+    border: 2px solid #FB4B4D;
+    cursor: pointer;
+}
+
+.rectangle {
+    width: 17px;
+    height: 17px;
+}
+
+.logo {
+    width: 58px;
+    height: 61px;
+}
+
+/* ============ПЕРВЫЙ РАЗДЕЛ============== */
+
+.intro__container {
+    display: flex;
+}
+
+.left, .right {
+    width: 50%;
+    border-bottom: 1px solid black;
+}
+
+.left {
+    border-right: 1px solid black;
+}
+
+.right {
+    text-align: center;
+}
+
+.ujjo-logo {
+    border-bottom: 1px solid black;
+}
+
+.bottle-cups {
+}
+
+.bottle-hand {
+    object-fit: cover;
+}
+
+.img-wrapper {
+    padding: 5px;
+}
+
+.hero-mojo {
+    /* THE FIRST HOT SAUCE MADE FOR COFFEE */
+
+    /* position: absolute;
+    width: 536px;
+    height: 194px;
+    left: calc(50% - 536px/2 + 0.5px);
+    top: 24px; */
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 58px;
+    line-height: 65px;
+    /* or 111% */
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+
+    color: #000000;
+    margin: 0;
+    padding: 31px;
+
+    border-bottom: 1px solid black;
+}
+
+/* ==========TICKER-АНИМАЦИЯ============== */
+
+.ticker {
+    overflow: hidden;
+    position: relative;
+    border-bottom: 1px solid black;
+  }
+  
+  .ticker__wrapper {
+    display: flex;
+    width: max-content;
+    animation: ticker 10s linear infinite;
+  }
+  
+  .ticker__item {
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 25px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    white-space: nowrap;
+    flex-shrink: 0;
+    padding: 20px;
+  }
+  
+  .ticker__image {
+    padding: 0 40px;
+  }
+  
+  @keyframes ticker {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
+/* ============DIVIDER============== */
+
+.divider {
+    display: flex;
+    border-bottom: 1px solid black;
+}
+
+.scorpion {
+
+}
+
+.divider__text {
+    font-family: Roboto;
+    font-size: 65px;
+    font-weight: 400;
+    line-height: 72.58px;
+    letter-spacing: 0.5px;
+    text-align: center;
+}
+
+/* ==========CATALOG============= */
+
+.catalog {
+    display: flex;
+    position: relative;
+    gap: 10px;
+    justify-content: space-around;
+    border-bottom: 1px solid black;
+}
+
+.green-card {
+    padding: 45px 0 10px;
+}
+
+.fire_small, .fire_large {
+    position: absolute;
+}
+
+.small-left {
+    top: 25px;
+    left: 30px;
+}
+
+.large-left {
+    top: 15px;
+    left: 412px;
+}
+
+.small-right {
+    top: 25px;
+    right: 30px;
+}
+
+.large-right {
+    top: 15px;
+    right: 412px;
+}
+
+.product {
+    position: absolute;
+}
+
+.one-bottle {
+    top: 280px;
+    left: 28px;
+}
+
+.two-bottle {
+    top: 280px;
+}
+
+.dark-bottle {
+    top: 280px;
+    right: 28px;
+}
+
+.catalog-text {
+    position: absolute;
+}
+
+.t-n-t-left {
+    top: 190px;
+    left: 130px;
+}
+
+.t-n-t-right {
+    top: 190px;
+    right: 130px;
+}
+
+.light {
+    top: 230px;
+    left: 65px;
+}
+
+.dark {
+    top: 230px;
+    right: 65px;
+}
+
+.l-n-d {
+    top: 190px;
+}
+
+.pack {
+    top: 230px;
+}
+
+.bottle-big {
+    padding: 10px;
+    border-bottom: 1px solid black;
+}
+
+/* ================== ИСТОРИЯ ================== */
+
+.story-block {
+    display: flex;
+    height: 700px;
+    border-bottom: 1px solid black;
+}
+
+.story-block__founder {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    border-right: 1px solid black;
+}
+
+.story-header {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 58px;
+    line-height: 65px;
+    /* or 111% */
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+
+    margin: 53px 54px 45px;
+}
+
+.story-block__history {
+    position: relative;
+}
+
+.story-frame-image {
+    width: 646px;
+    height: 700px;
+}
+
+.story__text-container {
+    position: absolute;
+    top: 28%;
+    left: 20%;
+    text-align: center;
+
+    width: 390px;
+}
+
+.story__text {
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+/* =================== КОНЕЦ ==================== */
+
+.final-picture {
+    position: relative;
+    background-image: url("images/green-fire.svg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 756px;
+
+    border-bottom: 1px solid black;
+}
+
+.middle-picture {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+.forepicture {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 70%;
+}
+
+/* ================== ФУТЕР ====================== */
+
+.footer {
+    display: flex;
+    padding: 20px 93px;
+    justify-content: space-between;
+
+    background-color: #CEFD3B;
+}
+
+.privacy-policy, .instagram {
+    width: 144px;
+    height: 52px;
+    border: none;
+    color: #222222;
+    background-color: #CEFD3B;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.privacy-policy:hover, .instagram:hover {
+    text-decoration: underline;
+}
+
+.address {
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    text-transform: capitalize;
+}
+
+@media (max-width: 768px) {
+  .rectangle {
+    display: none;
+  }
+
+  .logo {
+    order: 1;
+    margin: 0 25%;
+  }
+
+  .nav__button:nth-of-type(2) { order: 4; }
+  .nav__button:nth-of-type(3) { order: 5; }
+  .nav__button:nth-of-type(4) { order: 6; }
+  .nav__button:nth-of-type(5) { order: 7; }
+  .nav__button:nth-of-type(1) { order: 8; }
+  .nav__button:nth-of-type(6) { order: 9; }
+
+  .fire_small, .fire_large, .green-card, .scorpion, .t-n-t-right,
+  .t-n-t-left, .l-n-d {
+    display: none;
+  }
+
+
+  .one-bottle { 
+    order: 1;
+    margin-top: 10px;
+  }
+  .light { order: 2; }
+  .two-bottle { order: 3; }
+  .pack { order: 4; }
+  .dark-bottle { order: 5; }
+  .dark { 
+    order: 6;
+    margin-bottom: 10px;
+  }
+
+  .bottle-big, .story-frame-image, .middle-picture {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+    margin: 0 5vw;
+  }
+
+  .header__container {
+    flex-wrap: wrap;
+    height: auto;
+    gap: 5px;
+    justify-content: center;
+  }
+
+  .nav__button {
+    width: 45%;
+    margin-bottom: 5px;
+  }
+
+  .intro__container {
+    flex-direction: column;
+  }
+
+  .left, .right {
+    width: 100%;
+    border: none;
+  }
+
+  .ujjo-logo, .bottle-cups, .bottle-hand {
+    width: 100%;
+    height: auto;
+  }
+
+  .hero-mojo {
+    font-size: 32px;
+    line-height: 1.2;
+    padding: 20px 10px;
+  }
+
+  .divider {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .divider__text {
+    font-size: 36px;
+    line-height: 1.2;
+    padding: 10px;
+  }
+
+  .catalog {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    position: static;
+  }
+
+  .green-card, .product, .catalog-text,
+  .fire_small, .fire_large {
+    position: static;
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .story-block {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .story-frame-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .story__text-container {
+    position: static;
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px 0;
+  }
+
+  .story-header {
+    font-size: 32px;
+    margin: 20px;
+  }
+
+  .final-picture {
+    height: auto;
+  }
+
+  .middle-picture, .forepicture {
+    width: 100%;
+    height: auto;
+    position: static;
+    transform: none;
+  }
+
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+  }
+
+  .privacy-policy, .instagram {
+    width: 80%;
+  }
+}
