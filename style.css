@@ -494,7 +494,7 @@ button:hover {
     }
   
     .final-picture {
-      height: 25vh;
+      height: 30vh;
     }
   
     .middle-picture, .forepicture {
@@ -639,10 +639,6 @@ button:hover {
         line-height: 5vh;
     }
 
-    .catalog {
-        
-    }
-
     .small-left, .small-right, .large-left, .large-right {
         display: none;
     }
@@ -678,5 +674,4 @@ button:hover {
     .middle-picture__container {
         display: none;
     }
-
   }
